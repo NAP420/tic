@@ -1,7 +1,7 @@
 .cell {
-    flex: 0 0 33.33%;
-    box-sizing: border-box;
+    flex: 0 0 75px;
     height: 75px;
+    box-sizing: border-box;
     text-align: center;
     font-size: 2em;
     line-height: 75px;
@@ -23,9 +23,20 @@
 #cellContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    max-width: 240px;
+    width: 225px; /* 75px * 3 cells */
     margin: 0 auto;
+}
+@media (max-width: 400px) {
+    #cellContainer {
+        width: 90vw;
+        max-width: 270px;
+    }
+    .cell {
+        flex: 0 0 30vw;
+        height: 30vw;
+        font-size: 8vw;
+        line-height: 30vw;
+    }
 }
   
 
@@ -52,5 +63,6 @@ button{
     font-size: 0.9em;
     color: #666;
 }
+
 
 

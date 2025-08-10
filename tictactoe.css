@@ -1,11 +1,11 @@
-.cell{
-    width: 75px;
+.cell {
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
     height: 75px;
-    display: inline-block;
-    border: 3.1px solid black;
     text-align: center;
     font-size: 2em;
-    line-height: 55px;
+    line-height: 75px;
+    border: 3.1px solid black;
     cursor: pointer;
 }
 
@@ -20,14 +20,13 @@
 }
 
 
-#cellContainer{
-    width: 240px;
-    height: 240px;
-    font-size: 30px;
-    margin: 0  auto;
+#cellContainer {
     display: flex;
     flex-wrap: wrap;
-} 
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+}
   
 
 body{
@@ -53,4 +52,5 @@ button{
     font-size: 0.9em;
     color: #666;
 }
+
 
